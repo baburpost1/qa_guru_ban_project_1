@@ -1,0 +1,7 @@
+# created by virtualenv automatically
+.pytest_cache
+bin
+lib
+pyvenv.cfg
+requirements.txt
+.idea
