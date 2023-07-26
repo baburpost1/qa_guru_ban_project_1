@@ -9,4 +9,7 @@ def test_selene(open_google):
 
 def test_check_empty_request(open_google):
     browser.element('[name="q"]').should(be.blank).type('35353nv345cdf!!fsdfs').press_enter()
-    browser.element("[class='LHJvCe'] [id='result-stats']").should(have.text('Результатов: примерно 0'))
+    # проверка что в структуре страницы внутри serarch нет элементов
+    browser.element('//*[@id="search"]//div').should(be.absent)
+
+
