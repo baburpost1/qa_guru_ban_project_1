@@ -15,7 +15,6 @@ button_submit = '[id="submit"]'
 
 def test_signup_user():
     browser.open('https://demoqa.com/text-box')
-    browser.element()
     browser.element(input_name).should(be.blank).type(user_name).press_tab()
     browser.element(input_email).should(be.blank).type(user_email).press_tab()
     browser.element(input_current_adress).should(be.blank).type(user_current_adress).press_tab()
